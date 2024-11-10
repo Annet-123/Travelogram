@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to BrandName</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>  
+
+    <div class="navbar">
+        <div class="brand">
+            <img src="logo.jpg" alt="Brand Logo"> 
+            <b>Travelogram</b>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Book</a></li>
+            <li>
+                <a href="#">Packages</a>
+                <div class="dropdown">
+                    <a href="#">United States</a>
+                    <a href="#">India</a>
+                    <a href="#">France</a>
+                    <a href="#">Germany</a>
+                </div>
+            </li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+        <div class="auth-buttons">
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+        </div>
+    </div>
+
+   <div class="hero">
+        <h1>Welcome to Travelogram</h1>
+        <h2 id="country-name">Visit </h2>
+        <button>Book Now</button>
+    </div>
+   
+<!-- checkpoint2 begins-- -->
+<section class="form-section">
+    <div class="row">
+        <div class="column image-column">
+            <img src="nature1.jpg" alt="Brand Image" class="brand-image">
+        </div>
+        <div class="column form-column">
+            <h2><b>Book Your Trip</b></h2>
+            <form id="booking-form">
+                <label for="destination"><b>Where to:</b></label>
+                <select id="destination">
+                    <option value="United States">United States</option>
+                    <option value="India">India</option>
+                    <option value="France">France</option>
+                    <option value="Hong Kong">Hong Kong</option>
+                </select>
+
+                <label for="persons"><b>Max no.of Persons:</b></label>
+                <input type="number" id="persons" min="1" required>
+
+                <label for="start-date"><b>Start Date:</b></label>
+                <input type="date" id="start-date" required>
+
+                <label for="end-date"><b>End Date:</b></label>
+                <input type="date" id="end-date" required>
+
+                <label for="description"><b>Description:</b></label>
+                <textarea id="description" rows="5" minlength="50" maxlength="500" required></textarea>
+
+                <button type="button" onclick="validateForm()"><b>Book Now</b></button>
+            </form>
+        </div>
+    </div>
+</section>
+<section class="package-gallery">
+    <h2>Package Gallery</h2>
+    <div class="package-row">
+        <div div class="package-card">
+            <img src="paris.jpg" alt="Package 1">
+            <h3>France</h3>
+            <p>Attractions: Eiffel Tower,Louvre Museum,Notre Dams</p>
+            <p>Price: $1800</p>
+            <p>Rating: ★5(1.1k)</p>
+            <button>Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="india.jpg" alt="Package 2">
+            <h3>India</h3>
+            <p>Attractions: Taj Mahal,Ooty,Temples</p>
+            <p>Price: $1200</p>
+            <p>Rating: ★4.5(863)</p>
+            <button>Book Now</button>
+        </div>
+        <div class="package-card">
+            <img src="hongkong.jpg" alt="Package 3">
+            <h3>Hong Kong</h3>
+            <p>Attractions:Disney world</p>
+            <p>Price: $1800</p>
+            <p>Rating: ★5(2k)</p>
+            <button>Book Now</button>
+        </div>
+    </div>
+
+    <!-- Add more package rows as needed -->
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <div class="services-list">
+        <div class="service"><b>Affordable Hotels</b>
+           <p> We offer a wide range of budget-friendly accommodations to suit every traveler’s needs.</p></div>
+        <div class="service"><b>Food & Drinks</b>
+<p>Savor local cuisine and enjoy gourmet meals with our exclusive food and drink packages.</p>
+        </div>
+        <div class="service"><b>Safety Guide</b>
+<p>Travel with peace of mind knowing that our safety guides provide expert advice for a safe trip.</p></div>
+        <div class="service"><b>Flight Booking</b>
+<p>Join experienced guides on tours to explore hidden gems and local attractions.</p></div>
+        <div class="service"><b>Custom Itinerary</b>
+<p>Let us tailor an itinerary that fits your travel style, budget, and interests.</p></div>
+        <div class="service"><b>Travel Insurance</b>
+<p>Our team is available around the clock to assist with any travel needs or emergencies.</p></div>
+    </div>
+</section>
+<section class="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-row">
+            <div class="gallery-card">
+                <img src="nature2.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-card">
+                <img src="china1.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-card">
+                <img src="jordan.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-card">
+                <img src="mountains.jpg" alt="Gallery Image 4">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us">
+        <div class="row">
+            <div>
+                <img src="travel2.png" class="column-about-image" alt="About Us Image">
+            </div>
+            <div class="column about-info">
+                <h2>About Us</h2>
+                <p>No matter where your travels take you, Travelogram offers the best way to connect with your destination. Make memories all over the globe with our locally-vetted, expertly-curated experiences. From must-see iconic attractions to unexpected under-the-radar gems, we have something for everyone.</p>
+                </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <span>TravelYo</span>
+            <div class="social-icons">
+                <a href="#" aria-label="Facebook"><img src="insta.jfif" alt="Instagram"></a>
+                <a href="#" aria-label="Instagram"><img src="fb.png" alt="Facebook"></a>
+                <a href="#" aria-label="Twitter"><img src="x.png" alt="Twitter"></a>
+            </div>
+        </div>
+        <p>© 2024 Travelogram.Made in India. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
